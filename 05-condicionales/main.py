@@ -47,6 +47,42 @@ else:
 
  print(f"{nombre} no es mayor de edad, tiene {str(edad)} años")
  
+print("################# EJEMPLO 4 #################")
+
+dia = int(input("Introduce el número de día de la semana: "))
+
+if dia == 1:
+    print("el lunes")
+elif dia ==2:
+    print("es martes")
+elif dia ==3:
+    print("es miércoles")
+elif dia == 4:
+    print("es jueves")
+elif dia == 5:
+    print("es viernes")
+elif dia == 6:
+    print("es sábado")
+elif dia == 7:
+    print("es domingo")
+else:
+    print(f"es un error, no existe el {dia} como número de día de la semana...")
+
 """
 
-print("################# EJEMPLO 4 #################")
+print("################# EJEMPLO 5 #################")
+
+edad_desde = 18.0
+edad_maxima = 66.5
+
+edad_real = float(input("introduce tu edad para comprobar si estas en edad de trabajar: "))
+
+if edad_real >= edad_desde and edad_real <= edad_maxima:
+    print("estas en edad de trabajar")
+else:
+    print("no estas en edad de trabajar")
+    if edad_real < edad_desde:
+        print(f"demasiado joven, tienes solo {edad_real} años")
+    else:
+        print(f"demasiado mayor, has alcanzado los {edad_real} años")
+
