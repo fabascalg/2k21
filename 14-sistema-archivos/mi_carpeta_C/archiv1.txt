@@ -1,0 +1,4 @@
+Soy Archivo1.txt
+
+y me han creado en ./mi_carpetas
+

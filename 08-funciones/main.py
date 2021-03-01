@@ -97,10 +97,59 @@ print(saludo("Andrés"))
 
 print("##### fin del ejemplo 5 #####")
 
-"""
+
 
 print("########## EJEMPLO 6 ##########")
-print(" devolver un valor desde una función...")
+print(" devolver un conjunto de cálculos desde una función que usa varios parámetros")
+
+numero1 = 0
+numero2 = 0
+
+def calculadora(numero1,numero2,basicas=False):
+    cadena = f"Suma            {numero1}+{numero2}={numero1+numero2}"
+    cadena += "\n"
+    cadena += f"Resta           {numero1}-{numero2}={numero1-numero2}"
+    cadena += "\n"
+    if basicas == False:
+        cadena += f"Multiplicación  {numero1}x{numero2}={numero1*numero2}"
+        cadena += "\n"
+        cadena += f"División        {numero1}/{numero2}={numero1/numero2}"
+        cadena += "\n"
+    return cadena
+
+print(calculadora(5,7,False))
+
+
+
+print("########## EJEMPLO 7 ##########")
+print(" Invocar a una función desde otra")
+
+def getNombre(nombre):
+    texto = f"El nombres es " + nombre
+    return texto
+
+def getApellidos(apellidos):
+    texto = f"Los apellidos son " + apellidos
+    return texto
+
+def getNombreCompleto(nombre, apellidos):
+    texto = getNombre(nombre) + "\n" + getApellidos(apellidos)
+    return texto
+
+print(getNombreCompleto("Fernando","Abascal González"))
+
+"""
+
+print("########## EJEMPLO 8 ##########")
+print(" función lambda")
+
+# funciones lambda, anónimas de una sola línea
+
+devuelve_entero = lambda numero: f"El entero es {numero}"
+
+print(devuelve_entero(11101957))
+
+
 
 
 
