@@ -1,6 +1,6 @@
 """
     Ejercicio 1.
-    Hacer un programa que tenga una lista de 8 números 
+    Hacer un programa que tenga una lista de 8 números
     enteros y que haga lo siguiente:
     - recorrer la lista y mostrarla
     - hacer función que recorra listas de números y devuelva
@@ -13,6 +13,7 @@
 # la lista de 10 enteros...
 numeros = [13, 64, 52, 73, 21, 7, 91, 63]
 
+"""
 print("########## EJERCICIO 1 ##########")
 print("=================================")
 
@@ -35,7 +36,8 @@ print(numeros)
 print("\n")
 
 """
-print("Lista original método each:")
+print("\n************** Lista original método each *****************")
+
 for n in numeros:
     print(n)
 print("\n")
@@ -60,6 +62,16 @@ indice = numeros.index(n)
 print(f"El índice del elemento {n} en la lista es: {indice}")
 print(f"Extrayendo únicamente el elemento {n} de la lista: {numeros[indice]}")
 
+"""
+serlock = int(input("Buscar un número de la lista ->"))
+comprobar = isinstance(serlock, int)
+while not comprobar or serlock <= 0:
+    serlock = int(input("Buscar un número de la lista ->"))
+else:
+    print(f"### buscar en la lista el {serlock}")
 
-
-
+try:
+    holmes=numeros.index(serlock)
+    print(f"El número buscado existe... es el índice {holmes}")
+except:
+    print(f"El número no está en la lista...")
