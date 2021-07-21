@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        {% block title %}
+        {% endblock %} | Víctor Robles Web
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}" />
+</head>
+
+<body>
+    <!-- Cabecera de la página -->
+    <header>
+        <div id="logotipo">
+            <!-- Logo django -->
+            <img src="{% static 'images/logo.png' %}" />
+            <h1>Sitio web con Django</h1>
+        </div>
+    </header>
+    <nav>
+
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="/hola-mundo">Hola Mundo</a>
+            </li>
+            <li>
+                <a href="/pagina">Página</a>
+            </li>
+            <li>
+                <a href="/contacto">Contacto</a>
+            </li>
+        </ul>
+
+    </nav>
+    <!--h1>Sitio web con Django | Víctor Robles</h1-->
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+    <div id="content">
+        <div id="box">
+            <h2 class="title">Título prueba</h2>
+            {% block content %}
+            <!-- código que viene de templates -->
+            <strong>contenido por defecto!!!</strong>
+            {% endblock %}
+        </div>
+    </div>
+    <footer>
+        <hr />
+        <div id="piepata">Master en Python &copy; Víctor Robles WEB | by fa</div>
+    </footer>
+</body>
+
+</html>

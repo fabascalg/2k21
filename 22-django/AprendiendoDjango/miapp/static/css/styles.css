@@ -1,0 +1,148 @@
+/* estilos generales */
+*{
+    margin: 0px;
+    margin: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+header{
+    width: 840px;
+    height: 140px;
+    background-color: #232828;
+    margin: 0 auto;
+
+}
+
+#logotipo h1{
+    display: block;
+    letter-spacing:  2px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 35px;
+    /*text-transform: uppercase;*/
+    font-weight: lighter;
+    color: #2ba977;
+}
+
+#logotipo img{
+    display: block;
+    float: left;
+    width: 60px;
+    margin-top: 20px;
+}
+
+#logotipo{
+    width: 59%;
+    height: 125px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+/* estilos barra navegación */
+
+nav {
+    width: 900px;
+    height: 40px;
+    background-color: #1b1e1f;
+    border: 1px solid #333333;
+    margin: 0px auto;
+    box-shadow: 0px 22px 22px gray ;
+    font-size: 15px;
+    /*margin-bottom: 45px;*/
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav li{
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #d1d4d6;
+
+}
+
+nav ul li a:hover{
+    background: #2ba977;
+    box-shadow: 0px 0px 5px #b1b2b3 inset;
+    color: white;
+    transition: all 300ms;    
+}
+
+/* barra de menú */
+
+.barra{
+      width: 900px;
+      margin: 0 auto;
+}
+
+.esquina-izquierda{
+    display: block;
+    border-left:20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float:left;
+}
+
+.esquina-derecha{
+    display: block;
+    border-right:20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float:right;
+}
+.relleno-barra{
+    display:block;
+    width: 862px;
+    background: #2b2f30;
+    height: 10px;
+    float: left;
+}
+
+/* estilos contenido central */
+
+#content{
+    width: 840px;
+    min-height: 600px;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#box{
+    background: white;
+    width: 96%;
+    min-height: 600px;
+    display: block;
+    padding: 2%;
+    border: 1px solid #dddddd;
+    margin: 0px;
+}
+
+#piepata {
+    width: 840px;
+    margin: 2px auto 0px auto;
+    padding: 5px 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: small;
+    color: #606060;
+    /*border-style: solid;
+    border-color: #2ba977;
+    border-width: 1px;*/
+    
+
+}
